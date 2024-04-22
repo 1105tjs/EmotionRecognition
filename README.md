@@ -1,5 +1,5 @@
 # 딥러닝 모델을 이용한 음성 감정 인식
-음성 감정 데이터 세트로부터 감정을 학습하고 영화 등장인물의 감정을 인식하여 감성 자막을 표현하는 방법 제시합니다.
+음성 감정 데이터 세트로부터 감정을 학습하고 영화 등장인물의 감정을 인식하여 감성 자막을 표현합니다.
 
 
 ## 개발 환경
@@ -17,7 +17,7 @@
   - https://www.kaggle.com/datasets/ejlok1/toronto-emotional-speech-set-tess
 
 ## 파일 설명
-##### 1. Mel-Spectrogram 변환 - 데이터셋의 음성 파일(.wav)을 멜 스펙트로그램으로 변환하여 csv로 저장합니다
+##### 1. Mel-Spectrogram 변환 - 데이터셋의 음성 파일(.wav)을 멜 스펙트로그램으로 변환한 후 csv로 저장합니다
 	TESS_mels.py
 	SAVEE_mels.py
 	RAVDESS_mels.py
@@ -31,7 +31,7 @@
 	RAVDESS.py
 	EmoDB.py
 
-##### 3. 전이학습 - 4가지 음성 데이터로 훈련된 각각의 모델에 insideOut 음성 데이터를 학습시킵니다.
+##### 3. 전이학습 - 4가지 음성 데이터로 훈련된 각각의 모델에 영화 insideOut 음성 데이터를 학습시킵니다.
 	TESS_inside.py
 	SAVEE_inside.py
 	RAVDESS_inside.py
